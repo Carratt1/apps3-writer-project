@@ -1,0 +1,168 @@
+      
+      body {
+        font-size: 16px;
+        font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "MS Sans Serif", "Arial", sans-serif;
+        font-weight: 400;
+/*      font-family: "Georgia", "Times New Roman", serif;
+*/        margin: 0;
+        line-height: 1.6em;
+        text-align:center;
+        color:#000000;
+      }
+      
+      main {
+        display:inline-block;
+        text-align:left;
+        margin: 120px 240px 120px 70px;
+        width:880px;
+        transition:   all .2s linear;
+      }
+    /*  main.editing {transform:scale(1.07);} */
+      main.editing + header {transform: translate(100px, -70px); opacity:.5;}
+          main h1 {
+            max-width:570px;
+            margin: 0 0 45px 70px;
+            font-size: 30px;
+            outline: solid 1px rgba(255,255,255,0);
+            transition:   outline-color 3s linear;
+          } main h1:focus {outline: solid 2000px rgba(255,255,255,0.6);}
+
+          main h2 {
+            max-width:570px;
+            margin: 45px 0 25px 70px;
+            font-size: 24px;
+            outline: solid 1px rgba(255,255,255,0);
+            transition:   outline-color 3s linear;
+          } main h2:focus {outline: solid 2000px rgba(255,255,255,0.6);}
+
+          main p {
+            max-width:570px;
+            margin: 0 0 17px 70px;
+            outline: solid 1px rgba(255,255,255,0);
+            transition:   outline-color 3s linear;
+          } main p:focus {outline: solid 2000px rgba(255,255,255,0.6);}
+      
+          main img {
+            max-width:880px;
+            margin: 45px 0 45px 0;
+          }
+      
+      
+
+      header {
+     /*   font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "MS Sans Serif", "Arial", sans-serif; */
+        display: inline-block;
+        position:absolute;
+        text-align:left;
+       /* border-right: solid 10px #b3aebd; */
+        padding: 65px 0 0 0;
+        top: 0;
+        right: 0;
+        width:260px;
+        transition: all .2s linear;
+      }
+
+        #pad-head {
+            display: inline-block;
+            color:#333333;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 3px 0;
+            line-height: 24px;
+        }
+        #scrwl-flair {
+          display:block;
+          position:absolute;
+          width:22px;
+          height:4px;
+          margin-top:-10px;
+          background-image:linear-gradient(-45deg, rgba(125, 125, 125, 1) 25%, transparent 25%, transparent 50%, rgba(125, 125, 125, 1) 50%, rgba(125, 125, 125, 1) 75%, transparent 75%, transparent);
+          background-size:4px 4px;
+          animation:loading 1s linear infinite;
+        }
+        #new-pad {
+            display: inline-block;
+            margin: 0 0 0 0;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: bold;
+            cursor:pointer;
+            color:#AAAAAA;
+            padding: 3px 0;
+            width:65px;
+            text-align:center;
+          } #new-pad:hover {cursor: pointer; color:#333333;}
+      
+          header ul {
+            list-style:none; 
+            margin:0;
+            padding: 0 5px 0 0;
+          }
+          header a {
+            display:block;
+            text-align:left;
+            font-size:14px;
+            font-weight:300;
+            padding: 4px 33px 4px 66px;
+            line-height: 1.25em;
+            margin: 0;
+            color: #333333;
+            text-decoration:none;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            margin-top:5px;
+          } header a:focus {outline:none;}
+            header a.sub {padding-left:85px; margin-top:2px;}
+            header a:hover {cursor:pointer; color:#555555;}
+            header a.active {
+              color:#FFFFFF;
+              font-weight:500;
+              position:relative;
+            }
+              header a.active:after {
+                content: "";
+                position: absolute;
+                top:0;
+                bottom:0;
+                left: -14px;
+                border: 13px solid transparent;
+                border-top: 13px solid white;
+                border-bottom: 13px solid white;
+            }
+      
+      .md-alpha-30 {opacity:.3;}
+
+      .md-gcbg-og.active {
+              background: #a23cfb!important;
+              background: -moz-linear-gradient(left, #a23cfb 0%, #fd4806 100%)!important;
+              background: -webkit-gradient(left top, right top, color-stop(0%, #a23cfb), color-stop(100%, #fd4806))!important;
+              background: -webkit-linear-gradient(left, #a23cfb 0%, #fd4806 100%)!important;
+              background: -o-linear-gradient(left, #a23cfb 0%, #fd4806 100%)!important;
+              background: -ms-linear-gradient(left, #a23cfb 0%, #fd4806 100%)!important;
+              background: linear-gradient(to right, #a23cfb 0%, #fd4806 100%)!important;
+              animation:none!important;
+      }
+      .md-gcbg-pk.active {
+            background: #7c52f0;
+            background: -moz-linear-gradient(left, #7c52f0 0%, #fa0aae 100%)!important;
+            background: -webkit-gradient(left top, right top, color-stop(0%, #7c52f0), color-stop(100%, #fa0aae))!important;
+            background: -webkit-linear-gradient(left, #7c52f0 0%, #fa0aae 100%)!important;
+            background: -o-linear-gradient(left, #7c52f0 0%, #fa0aae 100%)!important;
+            background: -ms-linear-gradient(left, #7c52f0 0%, #fa0aae 100%)!important;
+            background: linear-gradient(to right, #7c52f0 0%, #fa0aae 100%)!important;
+            animation:none!important;
+      }
+      .md-gcbg-bl.active {
+            background: #54f0bc;
+            background: -moz-linear-gradient(left, #54f0bc 0%, #3173f7 100%)!important;
+            background: -webkit-gradient(left top, right top, color-stop(0%, #54f0bc), color-stop(100%, #3173f7))!important;
+            background: -webkit-linear-gradient(left, #54f0bc 0%, #3173f7 100%)!important;
+            background: -o-linear-gradient(left, #54f0bc 0%, #3173f7 100%)!important;
+            background: -ms-linear-gradient(left, #54f0bc 0%, #3173f7 100%)!important;
+            background: linear-gradient(to right, #54f0bc 0%, #3173f7 100%)!important;
+            animation:none!important;
+      }
+
+
+@keyframes loading{0%{background-position: 0 0;} 100% {background-position: 10px 0px;}}	

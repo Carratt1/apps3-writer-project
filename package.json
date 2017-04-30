@@ -1,0 +1,23 @@
+{
+  "name": "SCRWL",
+  "version": "0.0.1",
+  "description": "An app for writing notes, ideas, thoughts...",
+  "main": "X2-s2.js",
+  "ALTmain": "server.js",
+  "scripts": {
+    "ALTstart": "node server.js",
+    "start": "node X2-s2.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "nedb": "^1.8.0",
+    "body-parser": "^1.17.1",
+    "socket.io": "^1.7.3"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "nedb"
+  ],
+  "license": "MIT"
+}
